@@ -19,13 +19,12 @@ class Solution {
         Pair prev = null;
         String ans = "";
         while(!pq.isEmpty()|| prev != null){
-            System.out.println("pq size " + pq.size());
+            
             if(pq.isEmpty() && prev != null){
                 return "";
             };
             Pair temp = pq.poll();
             ans+=temp.first;
-            System.out.println("ans is " + ans);
             temp.count = temp.count-1;
             if(prev != null && prev.count >0){
                 pq.add(prev);
@@ -35,7 +34,6 @@ class Solution {
             
             
         }
-        System.out.println("here ");
         return ans;
     }
 }
