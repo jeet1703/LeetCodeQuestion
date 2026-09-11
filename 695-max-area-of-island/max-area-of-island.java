@@ -10,8 +10,6 @@ class Solution {
             for(int i =0;i<4;i++){
                 int t1=  temp[0] + dir[i][0];
                 int t2 = temp[1] + dir[i][1];
-                System.out.println("t1 t2 is " + t1 + " " + t2 + "grid " );
-                if((t1>=0 && t1<grid.length) && (t2>=0 && t2>grid[0].length)) System.out.println(grid[t1][t2] + " visited " + visited[t1][t2]);
                 if((t1>=0 && t1<grid.length) && (t2>=0 && t2<grid[0].length) && grid[t1][t2] == 1 && visited[t1][t2] != 1){
                     visited[t1][t2] = 1;
                     count++;
