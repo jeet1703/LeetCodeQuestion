@@ -28,8 +28,6 @@ class Solution {
             for(int j =0;j<n;j++){
                 if(grid[i][j] == 1 && visited[i][j] != 1){
                     int countArea = solve(grid,visited,i,j);
-                    System.out.println(countArea);
-                    
                     maxArea = Math.max(maxArea,countArea);
                 }
             }
